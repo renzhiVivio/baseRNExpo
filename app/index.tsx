@@ -1,7 +1,6 @@
 import { useRouter } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Image, Platform } from 'react-native';
-import { Button } from '@ant-design/react-native';
+import { StyleSheet, View, Image, Platform, Button } from 'react-native';
 
 
 const PlaceholderImage = require('../assets/images/homepage-bg.png');
@@ -15,14 +14,14 @@ export default function Startup() {
                 <View style={styles.imageContainer}>
                     <Image source={PlaceholderImage} style={styles.image} />
                 </View>
-                <Button onPress={() => router.push('/web')}>Go!</Button>
+                <Button onPress={() => router.push('/web')} title="Go!" />
                 <StatusBar style="auto" />
             </View> :
             <View style={stylesIos.container}>
                 <View style={stylesIos.imageContainer}>
                     <Image source={PlaceholderImage} style={stylesIos.image} />
                 </View>
-                <Button onPress={() => router.push('/mobile')}>Go!</Button>
+                <Button onPress={() => router.push('/mobile')} title="Go!" />
                 <StatusBar style="auto" />
             </View>
     );
