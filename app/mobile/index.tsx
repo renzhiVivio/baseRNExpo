@@ -4,7 +4,7 @@ export default function Home() {
 
     return (
         <View>
-            <Text>Blank Page</Text>
+            <Text>Mobile Page</Text>
         </View>
     );
 }
